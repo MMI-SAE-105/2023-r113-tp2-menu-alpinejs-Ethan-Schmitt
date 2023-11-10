@@ -1,3 +1,3 @@
-- nom :
-- prénom :
-- URL publique du site :
+- nom : Ethan 
+- prénom : Schmitt
+- URL publique du site : https://creative-bavarois-546ede.netlify.app
