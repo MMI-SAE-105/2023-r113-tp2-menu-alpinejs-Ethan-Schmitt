@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test menu</title>
+    <title> Chien et chats </title>
     <script defer src="https://unpkg.com/alpinejs"></script>
   <style>
     .menu {
@@ -13,7 +13,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: #fff;
+      background: #ffffff;
       display: grid;
       place-content: center;
     }
@@ -38,7 +38,7 @@
         >
         menu
       </button>
-        <h1>Test de menu</h1>
+        <h1>Chien et Chats</h1>
     <nav 
       id="mainNav" 
       x-show="menuIsOpen" 
@@ -46,34 +46,32 @@
       class="menu"
       >
       <ul>
-        <li><a href="#">item 1</a></li>
-        <li><a href="#">item 2</a></li>
-        <li><a href="#">item 3</a></li>
+        <li><a href="#">Chat</a></li>
+        <li><a href="#">Chien </a></li>
+        <li><a href="#">Public</a></li>
       </ul>
     </nav>
     </header>
-    <!-- h2>lorem2^p>lorem -->
-    <h2>Lorem, ipsum.</h2>
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-      mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
-      nemo aliquid pariatur quam voluptates animi laudantium, aperiam
-      consectetur nobis enim.
+Voici différentes images de chien et chat pour tout le monde
     </p>
 
     <div x-data="{ openElement: '' }">
       <dl>
-          <dt><button @click="openElement = 'element1'">Lorem.</button></dt>
-          <dd x-show="openElement === 'element1'">Lorem ipsum dolor sit amet.</dd>
+          <dt><button @click="openElement = 'element1'"> Chat</button></dt>
+          <dd x-show="openElement === 'element1'">Il sont présents partout</dd>
       </dl>
       <dl>
-          <dt><button @click="openElement = 'element2'">Libero!</button></dt>
-          <dd x-show="openElement === 'element2'">Cum nesciunt quod excepturi officiis!</dd>
+          <dt><button @click="openElement = 'element2'">Chien</button></dt>
+          <dd x-show="openElement === 'element2'"> différentes races</dd>
       </dl>
       <dl>
-          <dt><button @click="openElement = 'element3'">Obcaecati.</button></dt>
-          <dd x-show="openElement === 'element3'">Minima, veritatis accusantium. Aliquid, fuga.</dd>
+          <dt><button @click="openElement = 'element3'">Public</button></dt>
+          <dd x-show="openElement === 'element3'">Pour tout le monde </dd>
       </dl>
   </div>
   </body>
 </html>
+
+
+
