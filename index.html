@@ -52,7 +52,7 @@
     </nav>
     </header>
     <p>
-Voici différentes images de chien et chat pour tout le monde
+Bienvenue sur le site qui montre de superbe images de chien et de chat
     </p>
 
     <div x-data="{ openElement: '' }">
@@ -65,9 +65,8 @@ Voici différentes images de chien et chat pour tout le monde
           <dd x-show="openElement === 'element2'"> différentes races</dd>
       </dl>
       <dl>
-          <dt><button @click="openElement = 'element3'">Public</button></dt>
-          <dd x-show="openElement === 'element3'">Pour tout le monde </dd>
-      </dl>
+          <dt><button @click="openElement = '//'">Public</button></dt>
+        </dl>
   </div>
   </body>
 </html>
