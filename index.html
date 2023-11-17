@@ -58,15 +58,12 @@ Bienvenue sur le site qui montre de superbe images de chien et de chat
     <div x-data="{ openElement: '' }">
       <dl>
           <dt><button @click="openElement = 'element1'"> Chat</button></dt>
-          <dd x-show="openElement === 'element1'">Il sont présents partout</dd>
+          <dd x-show="openElement === 'element1'"><img src="public/img/cats/Cat_poster.jpg" alt="collage de chats"></dd>
       </dl>
       <dl>
           <dt><button @click="openElement = 'element2'">Chien</button></dt>
-          <dd x-show="openElement === 'element2'"> différentes races</dd>
+          <dd x-show="openElement === 'element2'"><img src="public/img/dogs/Collage_of_Nine_Dogs.jpg" alt=" collage d'images de chien"> </dd>
       </dl>
-      <dl>
-          <dt><button @click="openElement = '//'">Public</button></dt>
-        </dl>
   </div>
   </body>
 </html>
