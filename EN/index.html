@@ -36,9 +36,9 @@
         @click="menuIsOpen = ! menuIsOpen"
         class="header_menuBtn"
         >
-        <img src="/public/icones/logomenu.svg" alt="">
+        <img src="public/icones/logomenu.svg" alt="">
       </button>
-
+        <h1>Chien et Chat</h1>
     <nav 
       id="mainNav" 
       x-show="menuIsOpen" 
@@ -46,13 +46,27 @@
       class="menu"
       >
       <ul>
-        <li><a href="../chat/index.html">Chat</a></li>
-        <li><a href="../chien/index.html">Chien </a></li>
+        <li><a href="/EN/chat/index.html">Chat</a></li>
+        <li><a href="/EN/chien/index.html">Chien </a></li>
     </ul>
     </nav>
-    <a href="/index.html"> <img src="/public/icones/Accueil.svg" alt=""></a>
     </header>
-    <h1>A domestic cat is walking</h1>
-    <img src="/public/img/cats/Chat 2.jpg" alt="Chat Noir et blanc">
-</body>
+    <p>
+Bienvenue sur le site qui montre de superbe images de chien et de chat
+    </p>
+
+    <div x-data="{ openElement: '' }">
+      <dl>
+          <dt><button @click="openElement = 'element1'"> Chat</button></dt>
+          <dd x-show="openElement === 'element1'"><img src="public/img/cats/Cat_poster.jpg" alt="collage de chats"></dd>
+      </dl>
+      <dl>
+          <dt><button @click="openElement = 'element2'">Chien</button></dt>
+          <dd x-show="openElement === 'element2'"><img src="public/img/dogs/Collage_of_Nine_Dogs.jpg" alt=" collage d'images de chien"> </dd>
+      </dl>
+  </div>
+  </body>
 </html>
+
+
+
