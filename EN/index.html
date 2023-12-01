@@ -50,6 +50,7 @@
         <li><a href="/EN/chien/index.html">Chien </a></li>
     </ul>
     </nav>
+    <li><a href="/FR/index.html"> Francais </a></li>
     </header>
     <p>
       Welcome to the site that shows superb images of dogs and cats
@@ -57,11 +58,11 @@
 
     <div x-data="{ openElement: '' }">
       <dl>
-          <dt><button @click="openElement = 'element1'"> Chat</button></dt>
+          <dt><button @click="openElement = 'element1'"> Cat</button></dt>
           <dd x-show="openElement === 'element1'"><img src="public/img/cats/Cat_poster.jpg" alt="collage de chats"></dd>
       </dl>
       <dl>
-          <dt><button @click="openElement = 'element2'">Chien</button></dt>
+          <dt><button @click="openElement = 'element2'">dog</button></dt>
           <dd x-show="openElement === 'element2'"><img src="public/img/dogs/Collage_of_Nine_Dogs.jpg" alt=" collage d'images de chien"> </dd>
       </dl>
   </div>
